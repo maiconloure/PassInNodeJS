@@ -4,7 +4,12 @@
   "description": "The pass.in it is an application to manager attendees in in-person events.",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch --env-file .env src/server.ts"
+    "dev": "tsx watch --env-file .env src/server.ts",
+    "build": "tsup src/server.ts --format esm --dts --minify --splitting --sourcemap",
+    "start": "node dist/server.mjs",
+    "db:migrate": "prisma migrate dev --name init",
+    "db:reset": "prisma migrate reset --force",
+    "db:studio": "prisma studio"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +20,7 @@
   "devDependencies": {
     "@types/node": "^20.12.7",
     "prisma": "^5.13.0",
+    "tsup": "^8.0.2",
     "tsx": "^4.7.2",
     "typescript": "^5.4.5"
   },
