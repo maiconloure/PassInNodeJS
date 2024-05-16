@@ -9,15 +9,16 @@ jobs:
   build-and-push:
     name: 'Build and Push'
     runs-on: ubuntu-latest
+
     steps:
-      -name: Checkout
+      - name: Checkout
         uses: actions/checkout@v4
       
-      -name: Generate sha
+      - name: Generate sha
         id: generate_sha
         run: |
           SHA=$(echo $GITHUB_SHA | cut -c7)
           echo "sha=$SHA" >> $GITHUB_OUTPUT
       
-      -name: Build docker image
+      - name: Build docker image
         run: docker build -t maiconlourenco/nlw.service.passin:${{ steps.generate_sha.outputs.sha }} .
