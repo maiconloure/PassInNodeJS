@@ -1,0 +1,26 @@
+PROCESSADOR AMD RYZEN 9 5950X, 16-CORE, 32-THREADS, 3.4GHZ (4.9GHZ TURBO), CACHE 72MB, AM4
+
+PLACA MAE ASUS ROG STRIX X570-E GAMING WI-FI II, DDR4, SOCKET AM4
+
+Memória Kingston Fury Beast RGB, 16GB, 3200MHz, DDR4, CL16, Preto  - 4x16 = 64GB
+
+Placa de Vídeo RTX 4070 Ti Ventus MSI 12 GB GDDR6X\
+
+SSD Netac NV7000 NVME M.2 Gen4 | 2TB
+
+HD Seagate 2TB BarraCuda, 3.5', SATA
+
+Fonte XPG CyberCore, 1300W, 80 PLUS Platinum, Full Modular, com PFC Ativo
+
+Gabinete Gamer Lian Li O11 Dynamic XL, Full Tower, Vidro Temperado, Silver
+
+Water Cooler LT720 ARGB 360mm Deepcool - Preto
+
+7x UNI FAN SL-INFINITY 120mm
+
+
+Monitor Gamer Curvo Samsung Odyssey 27" WQHD, 240Hz, 1ms
+
+Mouse Logitech MX Master 3S 
+
+Teclado Keychron K2 Wireless Mechanical - Gateron Red - keycaps pbt custom
