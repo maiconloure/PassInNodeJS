@@ -1,4 +1,4 @@
-name: CI
+name: "[CI] Continuous Integration"
 
 on:
   push:
@@ -6,15 +6,14 @@ on:
       - main
 
 jobs:
-  build-and-push:
+  build:
     name: 'Build and Push'
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
+      - name: "Checkout"
         uses: actions/checkout@v4
       
-      - name: Generate sha
+      - name: "Generate SHA"
         id: generate_sha
         run: |
           SHA=$(echo $GITHUB_SHA | head -c7)
@@ -32,3 +31,5 @@ jobs:
       - name: Push image
         run: |
          docker push maiconlourenco/nlw.service.passin:${{ steps.generate_sha.outputs.sha }}
+         docker tag  maiconlourenco/nlw.service.passin:${{ steps.generate_sha.outputs.sha }} maiconlourenco/nlw.service.passin:latest
+         docker push maiconlourenco/nlw.service.passin:latest
